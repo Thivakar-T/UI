@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>SEMESTER RESULT FOR THIRD YEAR[2022-2023]</h1><hr>
+         <button id="b">CLASS 1 RESULT</button> 
+         <div id="d"></div>
+    </center>
+    <script>
+       
+        document.getElementById("b").addEventListener("click",n);
+        function n(){
+            var f1 = new XMLHttpRequest();
+            f1.open("GET","exajax0.json",true);
+            f1.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    var f2 = JSON.parse(f1.responseText);
+                    var f3 = f2.class;
+                    var t = " ";
+                    for(var i=0;i<f3.length;i++){
+                        t+="<br>"+"NAME="+f3[i].name+"|| GRADE="+f3[i].grade+"<hr>";
+                    }
+                    document.getElementById("d").innerHTML = t;
+                }
+            };
+            f1.send();
+        
+        }
+    </script>
+</body>
+</html>
