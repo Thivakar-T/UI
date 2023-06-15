@@ -1,0 +1,158 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+  }
+  body,html{
+    overflow-x: hidden;
+     
+  }
+  
+  nav {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+  /* .startbootstrapleft {
+    padding:100px 0 0 20px;
+  } */
+  i{
+    color:rgb(107, 48, 107);
+  }
+  #grad1 {
+  /*background-color: red; For browsers that do not support gradients */
+    background-image: linear-gradient(to right, blue , violet);
+  }
+  #gradiant2 {
+    /*background-color: red; For browsers that do not support gradients */
+      background-image: linear-gradient(to bottom, blue , violet);
+    }
+  .btn-close {
+      background-color:white;
+  }
+  
+  
+  .bg-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .multicircle {
+    width: 400px; 
+    height: 400px;
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .multicircle {
+      width: 250px; 
+      height: 250px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) and (min-width:425px) {  /*only for screens that are 768-425px wide*/
+    .multicircle {
+      width: 350px; 
+      height: 350px;
+    }
+  }
+  
+   
+  .circle {
+    width: 19rem; 
+    height: 19rem;
+    border-radius: 50%;
+  }
+  .mobile {
+    height:450px;
+    position: relative;
+    bottom:50px;
+    left:35px;
+  }
+  
+   .circletwo {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin-top:40px;
+    
+   } 
+  .mobiletwo {
+    position: relative;
+      bottom:300px; 
+  left:53px;
+     height:350px;
+  }
+  
+  @media only screen and (max-width: 768px) and (min-width:425px) {
+    #startbootstrap {
+      height:950px;
+    }
+    .featuresleft{
+      padding-top: 35px;
+    
+    }
+   #features{
+      height:470px;
+     }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    #startbootstrap {
+      height:1150px;
+      padding-top:30px;
+    }
+    #features{
+     height:1250px;
+    }
+    .featuresleft{
+      height:400px;
+      padding-top: 30px;
+    }
+    .circletwo {
+      height: 10rem;
+    width: 10rem;
+    position: relative;
+    right:30px;
+    }
+    .mobiletwo {
+      height:300px;
+      bottom:230px;
+      left:15px;
+  
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .startbootstrapright {
+      padding-top:70px;
+    }
+    /* #features{
+      height:500px;
+     } */
+     .featuresleft{
+      padding-top:50px;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    #features{
+      height:500px;
+     }
+     .featuresleft{
+      padding-top:40px;
+    }
+    .startbootstrapleft {
+      padding:5px 85px 5px 85px;
+    }
+    .startbootstrapright {
+      padding-top:70px;
+    }
+  }
+  @media only screen and (min-width: 2560px) {
+    #startbootstrap {
+      height:550px;
+    }
+    .startbootstrapleft {
+      padding: 60px 120px 5px 120px;
+    }
+    .startbootstrapright {
+      padding-top:20px;
+    }
+  }
+  
