@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Exercise</title>
+    <style>
+    .myDiv{
+        display: block;
+        background-color: powderblue;
+        border: 5px solid red;
+    }
+    table,th,td{
+        background-color: burlywood;
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding:20px;
+    }
+    th,td{
+        text-align: center;
+    }
+    tr:hover{background-color: blue;}
+    </style>
+</head>
+<body>
+    <div class="myDiv">
+    <h1>
+        This is a Heading in Div element
+    </h1>
+    <p><b>This is paragraph in div element</b></p>   
+</div>
+<h2><span style="border: 2px solid blueviolet;">Table</span></h2>
+<hr>
+<table style="width: 300; height: 300;">
+    <caption style="font-family:cursive;" text-align="center">Names Table</caption>
+
+    <tr>
+        <th>Firstname</th>
+        <th>Middlename</th>
+        <th>Lastname</th>
+    </tr>
+    <tr>
+        <td><sub>Mariya</sub></td>
+        <td>Siby</td>
+        <td>Leo</td>
+    </tr>
+    <tr>
+        <td colspan="2">Amirtha</td>
+        <td><sup>Suresh</sup></td>
+    </tr>
+    <a href="https://www.w3schools.com/html/">Click here for reference</a>
+    <h2>List of Food</h2>
+    <ul>
+        <li><strong>Biryani</strong></li>
+        <li><i>Parotta</i></li>
+    </ul>
+    <h2>List of Drinks</h2>
+    <ol>
+        <li>Mojito</li>
+        <li>Fresh Juice</li>
+    </ol>
+    <dl>
+        <dt><emp>Mojito</emp></dt>
+        <dd>-Mint Mojito</dd>
+        <dt>Fresh Juice</dt>
+        <dd>-Watermelon</dd>
+    </dl>
+<img src="image/workplace.jpg"alt="MARIYA PHOTO NEW.jpg" style="width:250px;height: 250px;"><br>
+<iframe src="image/workplace.jpg" alt="work place" width="250" height="250"></iframe><br>
+<canvas style="background-color: coral ;width: 350px; height: 50px;"></canvas>
+</table>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+    <style>
+    </style>
+    <body>
+    <h2 id="#Header">Hello World</h2>
+    <button onclick="displayResult()">Change Text</button>
+        <script>
+            function displayResult(){
+                document.getElementById("#Header").innerHTML="Have a nice day!"
+            }
+        </script><br><br>
+        
+    <form action="/test.html">
+        <label for="user"autofocus>Username:</label>
+        <input type="text" id="user" name="user"><br><br>
+        <label for="pwd"required>Password:</label>
+        <input type="password" id="pwd"  name="pwd"><br><br>
+        <label for="mail">Mail ID:</label>
+        <input type="email" id="mail" name="mail"><br><br>
+        <label for="quantity">Number of vehicles</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="5"><br><br>
+        <label form="food">Favorite Food</label>
+        <select id="food" name="food">
+            <option value="Biryani">Biryani</option>
+            <option value="Parotta">Parotta</option>
+            <option value="Friedrice">Fried Rice</option>
+        </select><br><br>
+        <label for="carname">Which Car do you have?</label>
+        <input type="radio" id="carname" name="carname" value="Audi">
+        <label for="carname">Audi</label>
+        <input type="radio" id="carname" name="carname" value="Benz">
+        <label for="carname">Benz</label><br><br>
+        <textarea style="height: 200px;width: 300px;">Hey!This is Mariya...</textarea><br><br>
+        <input type="submit"><br>
+    </form>
